@@ -22,6 +22,7 @@ public class App {
             System.out.println("0. Выйти из программы");
             System.out.println("1. Демонстрация работы со строками");
             System.out.println("2. Демонстрация работы с массивами");
+            System.out.println("3. Демонстрация работы кальулятора");
             System.out.print("Номер задачи: ");
             
             int task = scanner.nextInt(); scanner.nextLine();
@@ -39,6 +40,12 @@ public class App {
                     System.out.println("Выбрана задача демонстрации работы с массивами");
 
                     break;
+                case 3:
+                    System.out.println("Выбрана задача демонстрации работы с калькулятора");
+                    Calculator calculator = new Calculator();
+                    calculator.calc();
+                    break;
+
                 default:
                     System.out.println("Выберите номер задачи из списка!");
             
